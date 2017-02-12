@@ -1,0 +1,24 @@
+.l-justify-content(@value) {
+  justify-content: @value;
+    -webkit-justify-content: @value;
+}
+
+.l-align-items(@value) {
+  align-items: @value;
+    -webkit-align-items: @value;
+}
+
+.l-align-content(@value) {
+    align-content: @value;
+    -webkit-align-content: @value;
+}
+
+.l-flex(@amount) {
+    -webkit-flex: @amount 0;
+    flex: @amount 0;
+}
+
+.l-flex(@amount, @overflow) {
+    -webkit-flex: @amount 0 @overflow;
+    flex: @amount 0 @overflow;
+}

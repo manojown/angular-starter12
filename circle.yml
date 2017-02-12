@@ -1,0 +1,19 @@
+general:
+  artifacts:
+    - "istanbul-coverage/" # Istanbul Coverage Directory
+
+machine:
+  node:
+    version: 0.12.7
+  pre:
+    - export USER_ID=circleci
+    - git config --global user.email "modanisnehil@gmail.com"
+    - git config --global user.name "Snehil Modani"
+  timezone:
+    Asia/Colombo
+test:
+  pre:
+    - npm install
+    - bower install
+    - grunt codeLint
+    - grunt styleLint

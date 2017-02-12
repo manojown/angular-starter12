@@ -1,0 +1,88 @@
+/**
+* Created on Jan 23, 2016
+*
+* CSS Prefix: dialog
+**/
+
+@dialog-header: 4.5rem;
+.stk-dialog-title {}
+
+.stk-dialog-description {
+  padding: @app-padding-3 0 @app-padding-5 @app-padding-1;
+  &.strong {
+    font-family: @font-medium;
+  }
+}
+
+.stk-dialog-container {
+  // &.stk-dialog-xl {
+  //   min-width: 480px;
+  // }
+}
+
+.stk-dialog-content {
+  padding: @app-padding-6;
+  padding-bottom: @app-padding-6;
+}
+
+.stk-dialog-header {
+  background-color: @white;
+  box-shadow: @app-shadow-1;
+  height: @dialog-header;
+  padding: @app-padding-6;
+}
+
+.stk-dialog-form-container {
+  padding: @app-padding-4 0;
+  height: 100px;
+}
+
+.stk-dialog-title {
+  font-size: 1.6rem;
+  font-family: @font-light;
+  padding-left: @app-padding-1;
+}
+
+.stk-dialog-description {
+  font-family: @font-light;
+  padding-top: @app-padding-2;
+  padding-left: @app-padding-1;
+}
+
+.stk-dialog-column {
+  height: 100px;
+  min-width: 320px;
+}
+
+.stk-dialog-footer-actions {
+  border-top: 1px @app-grey-5 solid;
+  padding: @app-padding-4;
+  padding-right: @app-padding-6;
+  .md-button {}
+  md-checkbox {
+    margin-bottom: 0;
+    padding-right: @app-padding-4;
+  }
+}
+
+.stk-dialog-toolbar {
+  background-color: transparent !important;
+  color: inherit !important;
+}
+
+.stk-dialog-active-stage {
+  background-color: @app-blue-3 !important;
+}
+
+@media print {
+  .stk-dialog-header, .stk-dialog-footer {
+    display: none;
+  }
+  .pdfjs {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}

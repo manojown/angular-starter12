@@ -1,0 +1,28 @@
+/**
+ * Currency
+ * ----------------------------------------------------------------------------------------
+ */
+
+.rupee:extend(.l-flex-column) {
+    font-family: @rupee !important;
+    margin-right: 3px;
+    .l-justify-content(center);
+}
+.rupee:before {
+    content: '`';
+    color: @app-primary-color-5;
+    font-size: 0.9em;
+}
+
+.rupee-config(@color) {
+    .rupee:before {
+        color: @color;
+   }
+}
+
+.rupee-config(@color, @size) {
+    .rupee:before {
+        color: @color;
+        font-size: @size;
+   }
+}

@@ -1,0 +1,171 @@
+/**
+ * 
+ * Base LESS Starts Here
+ * 
+ * 
+ */
+
+@font-face {
+  font-family: @rupee;
+  src: url('../fonts/currency/rupee.ttf');
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: @font-regular;
+  letter-spacing: 0.02rem;
+  -webkit-font-smoothing: antialiased;
+  &:focus {
+    outline: 0;
+  }
+}
+
+button {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+html {
+  background: none;
+  font-size: 1vw;
+  .stk-layout-xs( {
+    font-size: 3.0vw;
+  }
+  );
+  .stk-layout-gt-xs( {
+    font-size: 2vw;
+  }
+  );
+  .stk-layout-sm( {
+    font-size: 2vw;
+  }
+  );
+  .stk-layout-gt-sm( {
+    font-size: 1.25vw;
+  }
+  );
+  .stk-layout-md( {
+    font-size: 1.25vw;
+  }
+  );
+  .stk-layout-gt-md( {
+    font-size: 1.0vw;
+  }
+  );
+  .stk-layout-lg( {
+    font-size: 1.0vw;
+  }
+  );
+  .stk-layout-gt-lg( {
+    font-size: 0.75vw;
+  }
+  );
+  .stk-layout-xl( {
+    font-size: 0.75vw;
+  }
+  );
+}
+
+body {
+  color: @app-black-5;
+  background: @white;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -msie-user-select: none;
+}
+
+textarea {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+hr {
+  box-shadow: none;
+  border-color: @app-grey-6;
+  margin: @app-padding-3 0rem;
+  opacity: 0.3;
+  padding: 0;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  &.no-margin {
+    margin: 0;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: @app-black-5;
+}
+
+p, .default-text {
+  font-family: @font-light;
+  font-size: 0.85rem;
+  line-height: 1.5rem;
+}
+
+.small-text {
+  font-family: @font-light;
+  font-size: 0.75rem;
+  line-height: 1.1rem;
+}
+
+input {
+  font-size: 1rem;
+  height: 36px;
+  width: 100%;
+}
+
+.md-icon-button {
+  .stk-font-icon {
+    display: block;
+  }
+}
+
+.ng-enter {
+  animation: fadeIn 0.5s both ease-in-out;
+  z-index: 8888;
+}
+
+.no-animate, .no-animate.ng-enter, .no-animate.ng-leave {
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+.stk-font-light {
+  font-family: titan-light;
+}
+
+.stk-font-regular {
+  font-family: titan-regular;
+}
+
+.stk-font-medium {
+  font-family: titan-medium;
+}
+
+.stk-font-bold {
+  font-family: titan-bold;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.text-link {
+  color: @app-primary-color-5;
+  cursor: pointer;
+}

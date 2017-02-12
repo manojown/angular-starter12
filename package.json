@@ -1,0 +1,79 @@
+{
+  "name": "angular-boilerplate",
+  "version": "1.0.0",
+  "description": "Angular Boilerplate",
+  "main": "src/app/main.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-requirejs": "gruntjs/grunt-contrib-requirejs#master"
+  },
+  "scripts": {
+    "test": "echo true"
+  },
+  "devDependencies": {
+    "compression": "^1.6.2",
+    "express": "^4.13.4",
+    "grunt": "^0.4.5",
+    "grunt-angular-templates": "^0.5.7",
+    "grunt-aws-s3": "^0.14.4",
+    "grunt-concurrent": "^2.0.3",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-copy": "^0.8.1",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-imagemin": "^1.0.0",
+    "grunt-contrib-jade": "^0.15.0",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-requirejs": "^0.4.4",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-env": "^0.4.4",
+    "grunt-filerev": "^2.3.1",
+    "grunt-filerev-replace": "^0.1.4",
+    "grunt-git": "^0.3.7",
+    "grunt-jscs": "^2.3.0",
+    "grunt-less-imports": "^1.1.0",
+    "grunt-merge-json": "^0.9.5",
+    "grunt-newer": "^1.1.2",
+    "grunt-notify": "^0.4.3",
+    "grunt-preprocess": "^4.1.0",
+    "grunt-replace": "^0.11.0",
+    "grunt-revizor": "actonate/grunt-revizor",
+    "grunt-version": "^1.0.0",
+    "include-all": "^0.1.6",
+    "jasmine-core": "^2.4.1",
+    "jit-grunt": "^0.10.0",
+    "jscs-jsdoc": "^1.2.0",
+    "jscs-stylish": "^0.3.1",
+    "jshint-stylish": "^2.0.1",
+    "karma": "^1.1.1",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-coverage": "^1.1.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-jasmine-async": "0.0.1",
+    "karma-requirejs": "^1.0.0",
+    "karma-spec-reporter": "0.0.26",
+    "less-plugin-clean-css": "^1.5.1",
+    "minimist": "^1.2.0",
+    "randomstring": "^1.1.4",
+    "requirejs": "^2.1.22",
+    "socket.io": "^1.4.5",
+    "time-grunt": "^1.3.0"
+  },
+  "authors": [
+    "shoaibmerchant",
+    "snehilmodani"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Actonate/angular-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Actonate/angular-boilerplate/issues"
+  }
+}

@@ -1,0 +1,22 @@
+div(ng-app='LoginForm', style="padding: 6.5rem 13.5rem;")
+  md-content.login-form(ng-app='LoginForm', ng-controller='AppBaseController as ViewModel', layout='row', layout-align='space-around', layout-padding='layout-padding', ng-cloak='ng-cloak')
+    md-card(flex='flex', flex-gt-sm='50', flex-gt-md='33')
+      md-toolbar(style='background-color:white;align:center;')
+        .md-toolbar-tools
+          img(src='actonate.png', style='height: 90px;margin:auto;')
+      md-card-content
+          
+        div(style='border-top: 2px solid red;')
+          form(name='Form')
+            h1(ng-bind='ViewModel.failed' style='color:red;')
+            md-input-container.md-block(flex-gt-sm='')
+              label Username 
+              input(required='', name='userName', ng-model='ViewModel.project.username')
+              div(ng-messages='projectForm.userName.$error')
+                div(ng-message='required') UserName required.
+            md-input-container.md-block(flex-gt-sm='')
+              label Password
+              input(required='', name='password', ng-model='ViewModel.project.password')
+              div(ng-messages='projectForm.password.$error')
+                div(ng-message='required') Password required.
+            md-button.md-raised.md-primary(ng-disabled='!Form.$valid' , ng-click='ViewModel.triggerApi()', style="width:100%;") &nbsp Login &nbsp

@@ -1,0 +1,79 @@
+/**
+ * 
+ * PROGRESS ALERTS CSS
+ * 
+ */
+
+.progress-danger(@type) when (@type = color) {
+    color: @progress-red !important;
+}
+
+.progress-danger(@type) when (@type = background) {
+    background: @progress-red !important;
+}
+
+.progress-danger(@type) when (@type = border-color) {
+    border-color: @progress-red !important;
+}
+
+.progress-warn(@type) when (@type = color) {
+    color: @progress-yellow !important;
+}
+
+.progress-warn(@type) when (@type = background) {
+    background: @progress-yellow !important;
+}
+
+.progress-warn(@type) when (@type = border-color) {
+    border-color: @progress-yellow !important;
+}
+
+.progress-positive(@type) when (@type = color) {
+    color: @progress-green !important;
+}
+
+.progress-positive(@type) when (@type = background) {
+    background: @progress-green !important;
+}
+
+.progress-positive(@type) when (@type = border-color) {
+    border-color: @progress-green !important;
+}
+
+.progress-success(@type) when (@type = color) {
+    color: @progress-success !important;
+}
+
+.progress-success(@type) when (@type = background) {
+    background: @progress-success !important;
+}
+
+.progress-success(@type) when (@type = border-color) {
+    border-color: @progress-success !important;
+}
+
+.progress(@name, @type) {
+    &.progress-danger {
+        .@{name} {
+            .progress-danger(@type);
+        }
+    }
+
+    &.progress-warn {
+        .@{name} {
+            .progress-warn(@type);
+        }
+    }
+
+    &.progress-positive {
+        .@{name} {
+            .progress-positive(@type);
+        }
+    }
+
+    &.progress-success {
+        .@{name} {
+            .progress-success(@type);
+        }
+    }
+}

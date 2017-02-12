@@ -1,0 +1,45 @@
+/**
+ * 
+ * Ignore Margins, Padding, Borders
+ * 
+ */
+
+.ignore-children-margin() {
+    &:first-child {
+        margin-left: 0px;
+    }
+
+    &:last-child {
+        margin-right: 0px;
+    }
+}
+
+.ignore-children-margin-vertical() {
+    &:first-child {
+        margin-top: 0px;
+    }
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+.ignore-children-padding() {
+    &:first-child {
+        padding-left: 0px;
+    }
+
+    &:last-child {
+        padding-right: 0px;
+    }
+}
+
+.ignore-children-border-vertical(@rules) {
+    @rules();
+
+    border-top: none !important;
+
+    &:first-child {
+        @rules();
+    }
+}

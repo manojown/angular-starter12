@@ -1,0 +1,85 @@
+/**
+ * Media Queries Mixins
+ * ----------------------------------------------------------------------------------------
+ */
+
+// Legacy breakpoints
+.phone (@rules) {
+  @media only screen and (max-width: 480px) {
+    @rules();
+  }
+}
+
+.tablet (@rules) {
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    @rules();
+  }
+}
+
+.tablet-small (@rules) {
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
+    @rules();
+  }
+}
+
+.desktop-large (@rules) {
+  @media only screen and (min-width: 1600px) {
+    @rules();
+  }
+}
+
+// ////////////////////////////////////////////////////////////////////////////////////////
+// Angular material specification breakpoints
+.stk-layout-xs (@rules) {
+  @media only screen and (max-width: 599px) {
+    @rules();
+  }
+}
+
+.stk-layout-gt-xs (@rules) {
+  @media only screen and (min-width: 600px) {
+    @rules();
+  }
+}
+
+.stk-layout-sm (@rules) {
+  @media only screen and (min-width: 600px) and (max-width: 959px) {
+    @rules();
+  }
+}
+
+.stk-layout-gt-sm (@rules) {
+  @media only screen and (min-width: 960px) {
+    @rules();
+  }
+}
+
+.stk-layout-md (@rules) {
+  @media only screen and (min-width: 960px) and (max-width: 1279px) {
+    @rules();
+  }
+}
+
+.stk-layout-gt-md (@rules) {
+  @media only screen and (min-width: 1280px) {
+    @rules();
+  }
+}
+
+.stk-layout-lg (@rules) {
+  @media only screen and (min-width: 1280px) and (max-width: 1919px) {
+    @rules();
+  }
+}
+
+.stk-layout-gt-lg (@rules) {
+  @media only screen and (min-width: 1920px) {
+    @rules();
+  }
+}
+
+.stk-layout-xl (@rules) {
+  @media only screen and (min-width: 1920px) {
+    @rules();
+  }
+}

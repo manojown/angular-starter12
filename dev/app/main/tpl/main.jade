@@ -1,0 +1,60 @@
+.container(ng-controller='AppMainController' )
+  .md-toolbar-tools.card.card-2(layout='row')
+    div(flex='column')
+      h2(md-truncate='')
+        button.md-raised(ng-click='toggleLeft()')
+          i.material-icons  menu
+    div
+      md-button.md-icon-button(aria-label='More')
+        md-menu-bar
+          md-menu
+            button(ng-click='$mdMenu.open()')
+              i.showicon.material-icons more_vert
+            md-menu-content
+              md-menu-item(type='checkbox', ng-model='settings.allowChanges') Allow changes
+              md-menu-divider
+              md-menu-item(type='button', ng-model='settings.mode', ng-value='1' ng-click="triggerApi()") Logout
+              h1.md-menu-item(type='radio', ng-model='settings.mode', ng-value='1') {{user}}
+              md-menu-item(type='radio', ng-model='settings.mode', ng-value='1') Mode 3
+  .sidenavdemoBasicUsage(layout='column', style='height:500px;', ng-cloak='')
+    section(layout='row', flex='')
+      .main-container(layout='row', flex='')
+        md-sidenav.nav-bg-color.md-sidenav-left(md-component-id='left', md-is-open='shouldLeftBeOpen', md-disable-backdrop='', md-whiteframe='4')
+          md-content.contentcolor(md-scroll-y='', flex='', layout='column')
+            md-sidemenu.nav-bgcolor1(locked='true')
+              md-sidemenu-group
+                md-subheader.md-no-sticky
+                  img(2.imimg.com='', data2='', ph='', bb='', my-='')
+                  button#button1.md-raised(ng-click='toggleLeft()')
+                    i.material-icons  keyboard_arrow_left
+                
+                md-sidemenu-content(md-icon='dashboard', md-heading='Dashboard', md-arrow='true')
+                  md-sidemenu-button(href='#') Submenu 1
+                  md-sidemenu-button(href='#') Submenu 2
+                  md-sidemenu-button(href='#') Submenu 3
+                md-sidemenu-content(md-heading='Menu 1', md-arrow='true')
+                  md-sidemenu-button(href='#') Submenu 1
+                  md-sidemenu-button(href='#') Submenu 2
+                  md-sidemenu-button(href='#') Submenu 3
+                md-sidemenu-content(md-heading='Menu 2', md-arrow='true')
+                  md-sidemenu-button(href='#') Submenu 1
+                  md-sidemenu-button(href='#') Submenu 2
+                  md-sidemenu-button(href='#') Submenu 3
+              md-sidemenu-group
+                md-sidemenu-button(href='#') Menu 3
+              md-sidemenu-group
+                md-sidemenu-button(href='#') Menu 4
+                md-sidemenu-button(href='#') Menu 5
+
+      md-content
+        .center-div(ui-view='', ng-class="{'active': isActive}" )
+    
+      nav.container1
+        a.buttons(href='http://codepen.io/koenigsegg1', target='_blank', tooltip='Kyle Lavery')
+        a.buttons(href='#', tooltip='Xavier')
+        a.buttons(href='#', tooltip='Calculator')
+        a.buttons(href='#', tooltip='Calender')
+        a.buttons(href='#', tooltip='Music')
+        a.buttons(href='#', tooltip='Menu')
+          span
+            span.rotate

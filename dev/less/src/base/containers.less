@@ -1,0 +1,108 @@
+.absoluted-window {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    
+    &.centered:extend(.l-flex-row, .l-flex-align-center) {
+        
+    }
+}
+
+.ratio(@percent) {
+    position: relative;
+    
+    &:before {
+        content: "";
+        display: block;
+        padding-top: @percent;
+    }
+}
+
+.ratio-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+.bubble(@size) {
+    height: @size;
+    width: @size;
+    min-height: @size;
+    min-width: @size;
+    max-height: @size;
+    max-width: @size;
+    border-radius: 50%;
+}
+
+.square(@size) {
+    height: @size;
+    width: @size;
+    min-height: @size;
+    min-width: @size;
+    max-height: @size;
+    max-width: @size;
+}
+
+.card {
+    background-color: @white;
+    border-radius: 2px;
+}
+
+.card-1:extend(.card) {
+    box-shadow: @app-shadow-1;
+}
+.card-2:extend(.card) {
+    box-shadow: @app-shadow-2;
+}
+.card-3:extend(.card) {
+    box-shadow: @app-shadow-3;
+}
+.card-4:extend(.card) {
+    box-shadow: @app-shadow-4;
+}
+.card-5:extend(.card) {
+    box-shadow: @app-shadow-5;
+}
+
+
+.card-area-1 {
+    padding: @app-padding-1;
+}
+.card-area-2 {
+    padding: @app-padding-2;
+}
+.card-area-3 {
+    padding: @app-padding-3;
+}
+.card-area-4 {
+    padding: @app-padding-4;
+}
+.card-area-5 {
+    padding: @app-padding-5;
+}
+.card-area-6 {
+    padding: @app-padding-6;
+}
+.card-area-7 {
+    padding: @app-padding-7;
+}
+.card-area-8 {
+    padding: @app-padding-8;
+}
+
+.card-heading-grey-4{
+    color: @app-grey-4;
+    font-family: @font-light;
+    margin-top: 0;
+}
+
+.card-heading-black-7 {
+    color: @app-black-7;
+    font-family: @font-light;
+    margin-top: 0;
+}

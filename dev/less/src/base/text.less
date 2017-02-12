@@ -1,0 +1,46 @@
+.underlined {
+    text-decoration: underline;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-large {
+    font-size: 1.1rem;
+}
+
+.ta-right {
+    text-align: right !important;
+}
+
+.ta-center {
+    text-align: center !important;
+}
+
+.text-overflow {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.text-overflow(@lines) {
+    overflow: hidden;
+    line-clamp: @lines;
+    -webkit-line-clamp: @lines;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.font-light {
+    font-family: @font-light;
+}
+
+.font-bold {
+    font-family: @font-bold;
+}
+
+h1, h2, h3, h4, h5 {
+    letter-spacing: 0.07rem;
+}

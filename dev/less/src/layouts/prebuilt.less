@@ -1,0 +1,16 @@
+.l-icon-button:extend(.l-flex-row) {
+    min-width: 6rem;
+    height: 2rem;
+    .user-select(none);
+
+    .l-icon:extend(.l-flex-row, .l-flex-align-center) {
+        .l-flex(2rem);
+    }
+    
+    .l-text:extend(.l-flex-column) {
+        .l-flex(auto);
+        .l-justify-content(center);
+        padding-left: @app-padding-2;
+        cursor: default;
+    }
+}

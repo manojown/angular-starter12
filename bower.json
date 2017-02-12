@@ -1,0 +1,34 @@
+{
+  "name": "angular-starter",
+  "version": "1.0.0",
+  "homepage": "https://github.com/Actonate/angular-starter",
+  "authors": [
+    "shoaibmerchant",
+    "snehilmodani"
+  ],
+  "description": "Angular Starter",
+  "main": "src/app/main.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-mocks": "1.5.7",
+    "angular-sanitize": "^1.5.7",
+    "angular-animate": "~1.5.7",
+    "requirejs": "Actonate/requirejs#2.2.0-patch1",
+    "angular-ui-router": "ui-router#^0.4.2",
+    "oclazyload": "^1.0.9",
+    "visionmedia-debug": "~2.2.0",
+    "angular-material": "1.1.3",
+    "animate.css": "^3.5.2",
+    "angular-material-sidemenu": "^1.0.1",
+    "angular-material-icons": "^0.7.1"
+  },
+  "devDependencies": {}
+}

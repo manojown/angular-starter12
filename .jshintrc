@@ -1,0 +1,25 @@
+{
+  "globals": {
+    "sails": true,
+    "process": true,
+    "__dirname": true,
+    "require": true,
+    "module": true,
+    "angular": true,
+    "define": true,
+    "jQuery": true,
+    "emit": true
+  },
+  "sub": true,
+  "curly": true,
+  "latedef": true,
+  "noarg": true,
+  "freeze": true,
+  "shadow": true,
+  "unused": true,
+  "eqnull": true,
+  "browser": true,
+  "camelcase": true,
+  "devel": false,
+  "undef": false
+}
